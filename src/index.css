@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0f091c;
+    color: #f7ebdb;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Comfortaa', 'Montserrat', cursive, sans-serif;
+  }
+
+  .font-serif-reading {
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+/* 3D Card Flip styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #180f2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a346e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7952b3;
+}
+
+/* Magical pulse keyframes */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes celestialSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes starTwinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: celestialSpin 24s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: celestialSpin 18s linear infinite reverse;
+}
+
+.animate-twinkle {
+  animation: starTwinkle 3s ease-in-out infinite;
+}

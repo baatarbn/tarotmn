@@ -1,0 +1,6 @@
+{
+  "name": "Tarotmn (Таротмн)",
+  "description": "Монгол хэл дээрх онлайн таротын мэргэ, өдрийн зурхай, зүрх сэтгэлийн дулаан зөвлөгөө өгөх вебсайт",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
